@@ -1,0 +1,16 @@
+package org.apache.maven.Test_Project.Test_Project;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class Test_Project {
+	public static void main(String[] args){
+		System.setProperty("webdriver.chrome.driver","/home/edureka/chromedriver");
+		ChromeOptions chromeOptions = new ChromeOptions();
+		//chromeOptions.addArguments("--headless");
+		WebDriver driver = new ChromeDriver(chromeOptions);
+		System.out.println("Hi, Welcome to Edureka's YouTube Live session on Selenium WebDriver");
+		driver.get("http://localhost:8090/addressbook");
+	}
+
+}
